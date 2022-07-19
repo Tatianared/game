@@ -1,6 +1,6 @@
 package ru.netology.domain;
 
-public class Player implements Comparable<Player> {
+public class Player {
 
 
     protected int id;
@@ -39,16 +39,4 @@ public class Player implements Comparable<Player> {
         return strength;
     }
 
-    @Override
-    public int compareTo(Player o) {
-        if (this.strength < o.strength) {
-            return 2;
-        }
-        if (this.strength > o.strength) {
-            return 1;
-        } else {
-
-            return 0;
-        }
-    }
 }
